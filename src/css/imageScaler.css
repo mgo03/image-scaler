@@ -1,0 +1,59 @@
+/* scale-imgを任意のクラス名に変更 */
+.scale-img img {
+    visibility: hidden;
+}
+
+/* 画像の拡大 */
+#overlay{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100vw;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+    z-index: 9999;
+    margin-top: 0;
+}
+
+#overlay.show{
+    opacity: 1;
+}
+
+.img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.img-container img{
+    vertical-align: top;
+    width: 98%;
+}
+
+.img-container img.scale{
+    -webkit-animation-name: scale;
+    animation-name: scale;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+}
+
+@-webkit-keyframes scale {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scale {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

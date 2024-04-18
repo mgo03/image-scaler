@@ -1,0 +1,12 @@
+.div-style img{
+    padding-bottom: 10px;
+}
+
+.div-style{
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    margin: 0;
+}
