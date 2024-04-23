@@ -5,7 +5,7 @@ const IMG_REDUCTION_RATIO = 0.2;
 //この比率以下のサイズの画像は拡大しない
 const MIN_IMG_WIDTH_RATIO = 1/3;
 
-// zoomする画像が含まれる要素内の、imgタグを選択するセレクタ
+// 拡大・縮小したい画像を含むclass名のimgタグを指定
 // 参考:https://developer.mozilla.org/ja/docs/Web/API/Document/querySelectorAll
 const IMG_SELECTORS = '.scale-img img';
 
