@@ -17,7 +17,7 @@
                 _.IMG_REDUCTION_RATIO = 0.2;
                 //画像のウィンドウ幅に対する比率
                 //この比率以下のサイズの画像は拡大しない
-                _.MIN_IMG_WIDTH_RATIO = 0;
+                _.MIN_IMG_WIDTH_RATIO = 1 / 3;
                 _.TARGET_CLASS = '.scale-img';
                 
                 const IMG_SELECTORS = `${_.TARGET_CLASS} img`;
