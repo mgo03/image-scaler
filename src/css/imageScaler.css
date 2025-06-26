@@ -1,10 +1,11 @@
 /* scale-imgを任意のクラス名に変更 */
 .scale-img img {
+    /* visibleにしないと画像が表示されなかった */
     visibility: hidden;
 }
 
 /* 画像の拡大 */
-#overlay{
+#scale-image-overlay-window{
     display: flex;
     background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
@@ -18,7 +19,7 @@
     margin-top: 0;
 }
 
-#overlay.show{
+#scale-image-overlay-window.show{
     opacity: 1;
 }
 

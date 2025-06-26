@@ -12,10 +12,16 @@
 <head>
     ...
     <link rel="stylesheet" href="imageScaler.css">
+    <script src="imageScaler.js"></script>
+    <script>
+        // 設定を変更する場合
+        ImageScaler.IMG_REDUCTION_RATIO = 0.3;
+        ImageScaler.MIN_IMG_WIDTH_RATIO = 0.2;
+    </script>
 </head>
+
 <body>
     ...
-    <script src="imageScaler.js"></script>
 </body>
 ```
 2. 拡大・縮小したい画像をdiv等で囲み、任意のクラス名をつける（デフォルト：scale-img）。
@@ -40,7 +46,7 @@
 | -- | -- | -- | -- |
 |IMG_REDUCTION_RATIO | number (0~1) | 0.2 | 画像の縮小率 |
 |MIN_IMG_WIDTH_RATIO | number (0~1) | 1/3 | 画像のウィンドウ幅に対する比率 　<br>この比率以下のサイズの画像は拡大しない|
-|IMG_SELECTORS | string | '.scale-img img' | 拡大・縮小したい画像を囲んだclass名のimgタグを指定<br> [querySelectorAll](https://developer.mozilla.org/ja/docs/Web/API/Document/querySelectorAll)|
+|TARGET_CLASS | string | '.scale-img' | 拡大・縮小したい画像を囲んだclassのimgタグを指定<br> [querySelectorAll](https://developer.mozilla.org/ja/docs/Web/API/Document/querySelectorAll)|
 
 ## ライセンス
 
